@@ -1,16 +1,16 @@
 
 public class Main {
     public static void main (String[]args){
-    Person person1 = new Person();
-    Person person2 = new Person();
+        Facultet facult_tks = new Facultet("TKS");
+        Facultet facult_is = new Facultet("IS");
+        Facultet[] facultets = new Facultet[2];
+        facultets[0] = facult_tks;
+        facultets[1] = facult_is;
 
-        person1.setName("John");
-        person1.setAge(31);
+        Student[] students = new Student[]{new Student(18,"Vasya", facult_is), new Student(19,"Vanya", facult_tks)};
 
-        person2.setName("Mike");
-        person2.setAge(51);
+        Institute institute = new Institute(facultets, students);
 
-        person1.descritionOfPerson();
-        person2.descritionOfPerson();
+        System.out.print(institute.getInformation());
     }
 }
