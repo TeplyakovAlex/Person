@@ -3,7 +3,7 @@
  */
 public class Student {
     private int age;
-    private String name;
+     private String name;
     private Facultet facultet;
 
     public Student(int age, String name, Facultet facultet) {

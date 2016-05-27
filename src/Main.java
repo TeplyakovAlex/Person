@@ -1,4 +1,6 @@
 
+import  org.testng.annotations.Test;
+
 public class Main {
     public static void main (String[]args){
         Facultet facult_tks = new Facultet("TKS");
